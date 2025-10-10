@@ -1,22 +1,21 @@
 /*
   JavaScript: styr logiken och interaktiviteten på sidan.
 
-  När sidan laddas så=
+  När sidan laddas händer detta:
   1. HTML laddas först (strukturen byggs upp).
   2. CSS appliceras (utseendet sätts).
   3. JavaScript körs sist (lägger till funktionalitet).
 
   JavaScript "pratar" med HTML via DOM (Document Object Model),
-  vilket möjliggör att det går att ändra innehåll, skapa nya element och reagera på användarens klick.
+  vilket möjliggör att det går att ändra innehåll, skapa nya element och reagera på besökarens klick.
 */
 
 /*
-  JavaScript – styr logik och interaktivitet på sidan.
-  Här visas hur HTML, CSS och JS samarbetar.
-  DOM används för att ändra innehåll och skapa nya element dynamiskt.
+  Nedan visas hur HTML, CSS och JS samarbetar.
+  Vi använder DOM för att uppdatera innehåll och skapa nya saker på sidan med JavaScript.
 */
 
-// Hämta element från HTML via deras ID
+// Hämtar element från HTML via deras ID
 const changeTextBtn = document.getElementById("changeTextBtn");
 const showTimeBtn = document.getElementById("showTimeBtn");
 const resetTextBtn = document.getElementById("resetTextBtn"); // Ny knapp
@@ -28,13 +27,13 @@ const changeBgBtn = document.getElementById("changeBgBtn");
 /* Event 1: Ändra text */
 changeTextBtn.addEventListener("click", () => {
   // Ändrar texten i paragrafen
-  introText.textContent = "Texten har ändrats med JavaScript!";
+  introText.textContent = "Nu har texten ändrats med JavaScript!";
 });
 
 /*Förklaring av Event 1:
   1. Användaren klickar på "Ändra text".
   2. Event listener triggas.
-  3. DOM uppdateras → texten ändras direkt på sidan. */
+  3. DOM uppdateras och texten ändras direkt på sidan. */
 
 /* Event 2: Återställ text */
 resetTextBtn.addEventListener("click", () => {
@@ -45,7 +44,7 @@ resetTextBtn.addEventListener("click", () => {
   Förklaring av Event 2:
   1. Användaren klickar på "Återställ text".
   2. Event listener triggas.
-  3. DOM uppdateras → originaltexten visas direkt på sidan.
+  3. DOM uppdateras och originaltexten visas direkt på sidan.
 */
 
 //Event 3: Ändrar bakgrundsfärg
@@ -63,7 +62,7 @@ changeBgBtn.addEventListener("click", () => {
 */
 
 
-/* Event 4: Visa aktuell tid */
+/* Event 4: Visar aktuell tid */
 showTimeBtn.addEventListener("click", () => {
   const currentTime = new Date().toLocaleTimeString();
   timeDisplay.textContent = `Aktuell tid: ${currentTime}`;
@@ -74,10 +73,10 @@ showTimeBtn.addEventListener("click", () => {
   1. Knappen klickas.
   2. JS hämtar aktuell tid.
   3. Texten i #timeDisplay ändras.
-  4. DOM uppdateras → webbläsaren visar tiden direkt.
+  4. DOM uppdateras och webbläsaren visar tiden direkt.
 */
 
-/* Extra VG-del: Dynamiskt skapa lista från en array */
+/* Extra VG-del: Skapar en lista på sidan från en array med JavaScript */
 const fruits = ["Äpple", "Banan", "Apelsin"];
 const listContainer = document.createElement("ul"); // Skapar <ul>
 
@@ -94,7 +93,7 @@ document.querySelector("main").appendChild(listContainer);
   Förklaring av extra VG del:
   1. JS skapar <ul> och <li> i minnet.
   2. Listan läggs till DOM.
-  3. Webbläsaren uppdaterar vyn → listan visas direkt på sidan.
+  3. Webbläsaren uppdaterar vyn och listan visas direkt på sidan.
 */
 
 /*
