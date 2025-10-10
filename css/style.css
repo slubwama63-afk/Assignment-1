@@ -28,26 +28,28 @@ header {
   padding: 20px;
 }
 
-/* Huvudinnehållet */
+/* Huvudinnehåll */
 main {
   padding: 20px;
 }
 
 /* Knapp-styling */
 button {
-  background-color: #c257a2;  /* Knappfärg */
+  background-color: #c257a2;
   color: white;
   border: none;
   padding: 10px 20px;
   margin: 10px;
-  cursor: pointer; /* Hand-ikon när musen hovrar */
+  cursor: pointer;
   border-radius: 8px;
   font-size: 16px;
+  transition: transform 0.2s, background-color 0.2s; /* Lägger till smooth animation */
 }
 
-/* När användaren håller musen över knappen */
 button:hover {
   background-color: #9c1e76;
+  transform: scale(1.1); /* Knappen blir 10% större */
 }
+
 
 
