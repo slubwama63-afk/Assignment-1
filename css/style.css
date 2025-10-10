@@ -1,0 +1,53 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/*
+  CSS – styr sidans utseende (färger, typsnitt, layout)
+*/
+
+/* Grundinställningar för sidan */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2c2e4;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header-styling */
+header {
+  background-color: #e398cc;
+  color: white;
+  padding: 20px;
+}
+
+/* Huvudinnehållet */
+main {
+  padding: 20px;
+}
+
+/* Knapp-styling */
+button {
+  background-color: #c257a2;  /* Knappfärg */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer; /* Hand-ikon när musen hovrar */
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* När användaren håller musen över knappen */
+button:hover {
+  background-color: #9c1e76;
+}
+
+
