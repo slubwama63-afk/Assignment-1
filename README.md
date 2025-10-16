@@ -1,6 +1,6 @@
 # Assignment-1
 
-Structure and construction of digital platforms (HTML, CSS, JavaScript connections)
+Struktur och konstruktion av digitala plattformar(HTML, CSS, JavaScript connections) 
 
 Filer och deras roll:
 
@@ -15,16 +15,13 @@ app.js= Lägger till interaktivitet och dynamiskt innehåll via DOM.
 
 Hur filerna samarbetar:
 
-Webbläsaren laddar HTML → sidan byggs upp (DOM).
+Webbläsaren laddar HTML och sidan byggs upp (DOM).
 
 CSS appliceras och sidan får utseende.
 
-JS körs och knappar och dynamiskt innehåll aktiveras.
+JS körs och knappar + dynamiskt innehåll aktiveras.
 
 När användaren klickar på en knapp ändras DOM och webbläsaren uppdaterar vyn direkt utan omladdning.
-
-
-
 
 
 
