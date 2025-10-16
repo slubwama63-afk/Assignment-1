@@ -1,6 +1,6 @@
 # Assignment-1
 
-Struktur och konstruktion av digitala plattformar(HTML, CSS, JavaScript connections) 
+Struktur och konstruktion av digitala plattformar(HTML, CSS, JavaScript samband) 
 
 Filer och deras roll:
 
